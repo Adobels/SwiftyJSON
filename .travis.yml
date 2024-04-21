@@ -6,4 +6,4 @@ script:
 - travis_retry xcodebuild -workspace SwiftyJSON.xcworkspace -scheme "SwiftyJSON iOS" -destination "platform=iOS Simulator,name=iPhone 14" build-for-testing test | xcpretty
 - travis_retry xcodebuild -workspace SwiftyJSON.xcworkspace -scheme "SwiftyJSON macOS" build-for-testing test | xcpretty
 - travis_retry xcodebuild -workspace SwiftyJSON.xcworkspace -scheme "SwiftyJSON tvOS" -destination "platform=tvOS Simulator,name=Apple TV" build-for-testing test | xcpretty
-- travis_retry xcodebuild -workspace SwiftyJSON.xcworkspace -scheme "Example" -destination "platform=iOS Simulator,name=iPhone 14" | xcpretty
+- travis_retry xcodebuild -workspace SwiftyJSON.xcworkspace -scheme "Example" -destination "platform=iOS Simulator,name=Any iOS Simulator Device" | xcpretty
